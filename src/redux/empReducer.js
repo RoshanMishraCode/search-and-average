@@ -29,6 +29,8 @@ const empSlice = createSlice({
       }, 0);
       if (state.item.length > 0) {
         state.averageAge = (age / state.item.length).toFixed(2);
+      } else {
+        state.averageAge = 0;
       }
     },
   },

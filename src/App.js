@@ -84,7 +84,7 @@ const App = () => {
   useEffect(() => {
     dispatch(getAverageAge());
     // eslint-disable-next-line
-  }, [addedEmp]);
+  }, [addedEmp.item]);
   const handleAdd = (item) => {
     dispatch(addEmp({ ...item }));
     const filterEmp = data.filter((emp) => emp.id !== item.id);
